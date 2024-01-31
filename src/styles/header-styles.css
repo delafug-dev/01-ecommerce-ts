@@ -1,0 +1,52 @@
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242422;
+    width: 100%;
+}
+
+.items-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    margin-right: 32px;
+}
+
+.title-header {
+
+}
+
+.header-nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.items-user {
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.busqueda {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    width: 500px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #000;
+}
+
+.busqueda:focus {
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.1);
+    outline: none;
+}
