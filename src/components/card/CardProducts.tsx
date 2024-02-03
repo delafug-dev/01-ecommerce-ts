@@ -23,6 +23,7 @@ export const CardProducts: React.FC<GridCardProps> = ({ productos, stateSearchPr
             <Card key={producto.id} producto={producto}/>
           ))
         }
+        
     </div>
   )
 }

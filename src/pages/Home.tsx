@@ -8,6 +8,10 @@ import { Footer } from "../components/footer/Footer";
 
 export const Home: React.FC = () => {
 
+  // ! Importante: Esta lógica debería estar en el hook UseProducto o en el Context 
+  // !             y aplicarla al componente CardProducts directamente 
+  // !             para evitar el renderizado de más componentes
+  
   const [stateSearchProduct, setStateSearchProduct] = useState<Producto[]>([]);
 
   const producto = UseProducto();
@@ -32,4 +36,3 @@ export const Home: React.FC = () => {
     </main>
   )
 }
-
