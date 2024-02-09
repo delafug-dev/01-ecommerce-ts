@@ -1,16 +1,20 @@
-import '../../styles/footer-style.css'
+import '../../styles/footer-styles.css'
 
-export const Footer = () => {
+interface PropsFooter {
+  darkMode: boolean;
+}
+
+export const Footer: React.FC<PropsFooter> = ({darkMode}) => {
   return (
-    <footer className="footer">
-        <div className="container">
+    <footer className="footer" style={{backgroundColor: darkMode ? '#E0E0E0' : '#222'}}>
+        <div className="container" style={{color: darkMode ? '#222' : 'white'}}>
             <div className="footer-content">
             <div className="footer-column">
                 <h3>Enlaces</h3>
                 <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a style={{color: darkMode ? '#222' : 'white'}} href="#">Inicio</a></li>
+                <li><a style={{color: darkMode ? '#222' : 'white'}} href="#">Productos</a></li>
+                <li><a style={{color: darkMode ? '#222' : 'white'}} href="#">Contacto</a></li>
                 </ul>
             </div>
             <div className="footer-column">

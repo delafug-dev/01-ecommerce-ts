@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #242422;
     width: 100%;
 }
 
@@ -16,7 +15,7 @@
 }
 
 .title-header {
-
+    cursor: pointer;
 }
 
 .header-nav-link {
@@ -49,4 +48,8 @@
 .busqueda:focus {
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.1);
     outline: none;
+}
+
+li svg {
+    cursor: pointer;
 }
